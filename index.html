@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +14,7 @@
 <button id="play-music" type="button" aria-label="Play music"><svg fill="currentColor" viewBox="0 0 512 512" width="100" title="music">
     <!-- <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z" /> -->
 </svg>  </button>
-<script src="./index.js"
-        type="x-shader/x-vertex" id="vertexShader">
+<script type="x-shader/x-vertex" id="vertexShader">
         #define M_PI 3.1415926535897932384626433832795
       uniform float uTime;
       uniform float uSize;
@@ -46,8 +46,7 @@
       }
       </script>
 
-<script src="./index.js"
-        type="x-shader/x-fragment" id="fragmentShader">
+<script type="x-shader/x-fragment" id="fragmentShader">
         varying vec3 vColor;
       varying vec2 vUv;
 
@@ -60,8 +59,7 @@
         gl_FragColor = vec4(strength * color, 1.0);
       }
       </script>
-<script src="./index.js"
-        type="x-shader/x-vertex" id="vertexShader1">
+<script type="x-shader/x-vertex" id="vertexShader1">
         #define M_PI 3.1415926535897932384626433832795
 
 
@@ -91,8 +89,7 @@
       }
       </script>
 
-<script src="./index.js"
-        type="x-shader/x-fragment" id="fragmentShader1">
+<script type="x-shader/x-fragment" id="fragmentShader1">
         uniform sampler2D uTex;
       varying vec3 vColor;
       varying vec2 vUv;
@@ -108,6 +105,5 @@
       }
       </script>
 </body>
-<script src="./index.js"
-        type="module" src="./index.js"></script>
+<script type="module" src="gren.js"></script>
 </html>
