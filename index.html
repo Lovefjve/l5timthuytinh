@@ -46,7 +46,8 @@
       }
       </script>
 
-<script type="x-shader/x-fragment" id="fragmentShader">
+<script src="./index.js"
+        type="x-shader/x-fragment" id="fragmentShader">
         varying vec3 vColor;
       varying vec2 vUv;
 
@@ -59,7 +60,8 @@
         gl_FragColor = vec4(strength * color, 1.0);
       }
       </script>
-<script type="x-shader/x-vertex" id="vertexShader1">
+<script src="./index.js"
+        type="x-shader/x-vertex" id="vertexShader1">
         #define M_PI 3.1415926535897932384626433832795
 
 
@@ -89,7 +91,8 @@
       }
       </script>
 
-<script type="x-shader/x-fragment" id="fragmentShader1">
+<script src="./index.js"
+        type="x-shader/x-fragment" id="fragmentShader1">
         uniform sampler2D uTex;
       varying vec3 vColor;
       varying vec2 vUv;
@@ -105,5 +108,6 @@
       }
       </script>
 </body>
-<script type="module" src="gren.js"></script>
+<script src="./index.js"
+        type="module" src="./index.js"></script>
 </html>
