@@ -289,7 +289,7 @@ class World {
             this.sound = new THREE.Audio(listener);
             const audioLoader = new THREE.AudioLoader();
             audioLoader.load(
-                "https://res.cloudinary.com/thangdao04/video/upload/v1668065022/ga-0beat_oaugkt.mp3",
+                "coanhodayroi.mp3",
                 (buffer) => {
                     this.sound.setBuffer(buffer);
                     this.sound.setLoop(false);
