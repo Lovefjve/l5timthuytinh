@@ -1,21 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="gou.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tym nè</title>
+  <link rel="stylesheet" href="gou.css">
 </head>
+
 <body>
-<canvas class="webgl"></canvas>
-<h1>I LOVE YOU</h1>
-<button id="play-music" type="button" aria-label="Play music"><svg fill="currentColor" viewBox="0 0 512 512" width="100" title="music">
-    <!-- <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z" /> -->
-</svg>  </button>
-<script type="x-shader/x-vertex" id="vertexShader">
-        #define M_PI 3.1415926535897932384626433832795
+  <canvas class="webgl"></canvas>
+  <h1>I LOVE YOU TRANG </h1>
+  <h2>fb:<a href="https://www.facebook.com/karry.trang.5059">Thuỳ Trang (嘉丽)</a> </h2>
+  <button id="play-music" type="button" aria-label="Play music"><svg fill="currentColor" viewBox="0 0 512 512" width="100" title="music">
+      <!-- <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z" /> -->
+    </svg> </button>
+  <script type="x-shader/x-vertex" id="vertexShader">
+    #define M_PI 3.1415926535897932384626433832795
       uniform float uTime;
       uniform float uSize;
       attribute float aScale;
@@ -46,8 +48,8 @@
       }
       </script>
 
-<script type="x-shader/x-fragment" id="fragmentShader">
-        varying vec3 vColor;
+  <script type="x-shader/x-fragment" id="fragmentShader">
+    varying vec3 vColor;
       varying vec2 vUv;
 
       void main() {
@@ -59,8 +61,8 @@
         gl_FragColor = vec4(strength * color, 1.0);
       }
       </script>
-<script type="x-shader/x-vertex" id="vertexShader1">
-        #define M_PI 3.1415926535897932384626433832795
+  <script type="x-shader/x-vertex" id="vertexShader1">
+    #define M_PI 3.1415926535897932384626433832795
 
 
       uniform float uTime;
@@ -89,8 +91,8 @@
       }
       </script>
 
-<script type="x-shader/x-fragment" id="fragmentShader1">
-        uniform sampler2D uTex;
+  <script type="x-shader/x-fragment" id="fragmentShader1">
+    uniform sampler2D uTex;
       varying vec3 vColor;
       varying vec2 vUv;
 
@@ -104,6 +106,10 @@
         gl_FragColor = vec4(texture * color * (strength + .3), 1.);
       }
       </script>
+  <h3>
+  fb:<a href="https://www.facebook.com/hieukks">lovefjve</a>
+  </h3>
 </body>
 <script type="module" src="gren.js"></script>
+
 </html>
