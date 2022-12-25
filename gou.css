@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  min-height: 0vh;
   box-sizing: border-box;
 }
 
@@ -12,6 +11,8 @@ body {
 }
 
 body {
+    margin: 0;
+  padding: 0;
   -webkit-font-soothing: antialiased;
   color: #ffdada;
 }
